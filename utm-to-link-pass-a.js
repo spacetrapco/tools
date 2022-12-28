@@ -24,8 +24,8 @@ function func_name( target ) {
     let result = href.toString();
     result = result.replace("%3A", ":", result);
     result = result.replace("%3F", "?", result);
-    result = result.replace("&amp;", "&" result)
-    result = result.replace("%2f", "/" result)
+    result = result.replace("&amp;", "&" result);
+    result = result.replace("%2f", "/" result);
     result = result.replaceAll("+", "%20", result);
 
     // set kembali attributenya
