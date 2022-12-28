@@ -20,8 +20,14 @@ function func_name( target ) {
     // tambahkan href bagian text sebelumnya dengan utm_source dari url
     href.set("text", text + " " + utm_source);
     
+    // clear uri
+    let result = href.toString();
+    result = result.replace("%3", ":", result);
+    result = result.replace("A%2F%2F", "//", result);
+    result = result.replace("%3F", "/", result);
+
     // set kembali attributenya
-    element.setAttribute("href", href.toString());
+    element.setAttribute("href", result);
   });
 }
 
