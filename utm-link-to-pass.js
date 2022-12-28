@@ -25,6 +25,7 @@ function func_name( target ) {
     result = result.replace("%3", ":", result);
     result = result.replace("A%2F%2F", "//", result);
     result = result.replace("%3F", "/", result);
+    result = result.replaceAll("+", "%20", result);
 
     // set kembali attributenya
     element.setAttribute("href", result);
