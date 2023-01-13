@@ -1,8 +1,8 @@
 // Read in the JSON files using fetch
 Promise.all([
-    fetch('countries.json').then(response => response.json()),
-    fetch('states.json').then(response => response.json()),
-    fetch('cities.json').then(response => response.json())
+    fetch('https://cdn.jsdelivr.net/gh/spacetrapco/tools@main/countries/countries.json').then(response => response.json()),
+    fetch('https://cdn.jsdelivr.net/gh/spacetrapco/tools@main/countries/states.json').then(response => response.json()),
+    fetch('https://cdn.jsdelivr.net/gh/spacetrapco/tools@main/countries/cities.json').then(response => response.json())
   ]).then(([countries, states, cities]) => {
       //populate the countries select field
       const countrySelect = document.getElementById('country');
