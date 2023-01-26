@@ -1,5 +1,5 @@
 // Get all buttons that have the attribute "tracking=utm-source"
-var buttons = document.querySelectorAll('button[tracking="utm-source"]');
+var buttons = document.querySelectorAll('a[tracking="utm-source"]');
 
 // Get the current URL
 var currentUrl = window.location.href;
